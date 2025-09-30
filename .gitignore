@@ -81,4 +81,7 @@ temp/
 *.tmp
 
 # FastAPI
-.pytest_cache/junit/
+.pytest_cache/
+
+# Test artifacts
+junit/
