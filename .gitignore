@@ -82,3 +82,6 @@ temp/
 
 # FastAPI
 .pytest_cache/
+
+# Test artifacts
+junit/
