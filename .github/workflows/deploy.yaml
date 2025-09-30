@@ -34,7 +34,7 @@ jobs:
           run: |
             pip install pytest pytest-cov
             mkdir -p junit
-            PYTHONPATH=. pytest tests/ --doctest-modules --junitxml=junit/test-results.xml --cov=src --cov-report=xml --cov-report=html --cov-report=term-missing --cov-fail-under=80
+            PYTHONPATH=. pytest tests/ --doctest-modules --junitxml=junit/test-results.xml --cov=ai_governance --cov-report=xml --cov-report=html --cov-report=term-missing --cov-fail-under=80
         - name: "Upload coverage reports"
           uses: codecov/codecov-action@v4
           if: always()  # Upload coverage even if tests fail
